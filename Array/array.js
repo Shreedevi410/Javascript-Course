@@ -36,3 +36,13 @@ companies.shift();
 companies.splice(2,1,"ola");
 companies.push("Amazon");
 console.log(companies);
+
+// Some extra array operations
+let filteredCities = cities.filter(city => city.toLowerCase() !== "mumbai");
+console.log("Cities after filter:", filteredCities);
+
+let doubledMarks = marks.map(mark => mark * 2);
+console.log("Doubled marks:", doubledMarks);
+
+let totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
+console.log("Total marks:", totalMarks);
