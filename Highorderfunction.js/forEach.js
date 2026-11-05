@@ -44,3 +44,19 @@ const product = arr.reduce(( prev,cur)=>{
 )
 
 console.log(product);
+
+// map example
+let doubled = number.map((num) => num * 2);
+console.log("Doubled numbers:", doubled);
+
+// find example
+let firstAbove90 = marks.find((mark) => mark > 90);
+console.log("First mark above 90:", firstAbove90);
+
+// some example
+let hasHighScore = marks.some((mark) => mark >= 95);
+console.log("Has score 95 or more:", hasHighScore);
+
+// every example
+let allAbove70 = marks.every((mark) => mark > 70);
+console.log("All marks above 70:", allAbove70);
