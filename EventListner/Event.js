@@ -8,10 +8,12 @@ btn.addEventListener("click", () => {
         mode = "dark";
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
+        btn.textContent = "Switch to Light Mode";
     } else {
         mode = "light";
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+        btn.textContent = "Switch to Dark Mode";
     }
 
     console.log(mode);
