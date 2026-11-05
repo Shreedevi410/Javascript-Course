@@ -25,8 +25,30 @@ for (i = 0; i <= 100; i ++){
 let number = 25;
 let userNo = prompt("Guess the number");
 
-while(number != userNo){
+while (number != userNo) {
     userNo = prompt("wrong number, guess again");
 }
 
-console.log("congrats")
+console.log("congrats");
+
+// for loop with break
+for (let i = 1; i <= 10; i++) {
+    if (i === 6) {
+        break;
+    }
+    console.log("Break example:", i);
+}
+
+// do while loop
+let count = 1;
+do {
+    console.log("Do while count:", count);
+    count++;
+} while (count <= 3);
+
+// nested loop example
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        console.log(`Nested loop: ${i}, ${j}`);
+    }
+}
