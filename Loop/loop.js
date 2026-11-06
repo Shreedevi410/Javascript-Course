@@ -52,3 +52,26 @@ for (let i = 1; i <= 3; i++) {
         console.log(`Nested loop: ${i}, ${j}`);
     }
 }
+
+// for loop with continue
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log("Continue example:", i);
+}
+
+// for...of loop (values in an array)
+let fruits = ["apple", "banana", "orange"];
+for (let fruit of fruits) {
+    console.log("Fruit:", fruit);
+}
+
+// for...in loop (keys in an object)
+let person = {
+    name: "Alex",
+    age: 20
+};
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
